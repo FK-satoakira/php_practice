@@ -1,11 +1,15 @@
 <?php
-$s = "hello";$s2 = "world";
-echo $s.$s2;
-$n = 3;
-$nn = $n++;     /* 式が評価された後プラス、つまり、$nnに３を代入した後$nは４になる */
-echo $n;    /* 4 */
-echo $nn;   /* 3 */
-$a = 3;
-echo $n+$a;     /* 4+3 */
-echo $nn+$a;    /* 3+3 */
 
+$f = array("orange"=>80,"apple"=>90,"grape"=>100);
+foreach ($f as $key => $value) {
+    echo "$key:$value<br>";
+}
+$p="";
+$s=0;
+foreach($f as $key => $v){
+    if($s<$v){      /* 最初は”０”なので、orangeは80だから必ず最初はこれが代入される */
+        $p=$key;
+        $s=$v;
+    }
+}
+echo $p,$s;
