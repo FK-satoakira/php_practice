@@ -1,0 +1,7 @@
+<?php
+$data = array(1,"apple",150,25);
+// echo $data;
+$string = implode('わ',$data);
+echo $string;
+// phpはjavascriptと違って$data;をそのまま出力不可
+// implode('/',$data);の','は好きに変えられる(文字も可能)
