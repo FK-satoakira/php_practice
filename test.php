@@ -1,5 +1,5 @@
 <?php
-$fh = "animals3.txt";
+$fh = "animals3.txt";   /*"index.html"は無理だった*/
 $file_handle = fopen($fh,"x+");
 // echo fgets($file_handle);
 fwrite($file_handle , "Wolf\n");
