@@ -1,0 +1,13 @@
+<?php
+$char = array("A","B","C");
+print_r($char);
+echo "<br>";
+// $val = array_pop($char);
+echo array_pop($char);
+// print_r($val);
+echo "<br>";
+print_r($char);
+// print_r();を使えば配列変数をそのままでも出力可能
+// array_pop()はリターンがあるのでecho array_pop($char)での出力可能
+
+
