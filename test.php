@@ -1,15 +1,23 @@
 <?php
+$fh = "animals3.txt";
+$file_handle = fopen($fh,"x+");
+// echo fgets($file_handle);
+fwrite($file_handle , "Wolf\n");
+fclose($file_handle);
+// echo fread()
+echo "Wolfを追加しました。";
 
-$f = array("orange"=>80,"apple"=>90,"grape"=>100);
-foreach ($f as $key => $value) {
-    echo "$key:$value<br>";
-}
-$p="";
-$s=0;
-foreach($f as $key => $v){
-    if($s<$v){      /* 最初は”０”なので、orangeは80だから必ず最初はこれが代入される */
-        $p=$key;
-        $s=$v;
-    }
-}
-echo $p,$s;
+
+// 初期のコードで
+//(a+時) 存在しないファイル名にすると新規作成する("animals3.txt"...)
+// (a時)a+と変わらず
+// rダメ
+// r+＝一度だけ書き込む
+// ｗ＝一度だけ書き込む。が、５回書いてあっても、一回に上書きする
+// xとx+はファイルがない状態から作って書き込む。ファイルが既にあった場合はエラー。
+
+// fget(ファイルハンドル)で$file_handle = fopen($fh,"r")（引数は必ず２個）;を使う。="r"が使えた。
+// ～.txtに書いてある文字をブラウザに読み込む
+
+
+
