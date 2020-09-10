@@ -1,6 +1,8 @@
 <?php
 $fh = "animals3.txt";   /*"index.html"は無理だった*/
 $file_handle = fopen($fh,"x+");
+// flock($file,LOCK_EX);  エラーするが、出来た
+
 // echo fgets($file_handle);
 fwrite($file_handle , "Wolf\n");
 fclose($file_handle);
