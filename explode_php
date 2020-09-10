@@ -1,0 +1,8 @@
+<?php
+$string = "マドレーヌ,160,6";
+$func = explode(',',$string);
+echo <<<END
+商品:$func[0]<br>   /* $func　を　$stringとしてしまった。ケアレスミス注意 */
+値段:$func[1]<br>
+個数:$func[2]<br>
+END;
