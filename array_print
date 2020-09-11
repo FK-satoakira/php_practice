@@ -1,0 +1,20 @@
+<?php
+$char = array("C","G","A");
+$keyChar = array("c"=>"C","g"=>"G","a"=>"A");
+print_r($char);
+// print_r($keyChar);
+// $d = $keyChar["c"];
+print_r($keyChar);
+echo "<br>";
+asort($char);
+print_r($char);
+echo "<br>";
+
+shuffle($char);
+
+print_r($char);
+
+// 数字、数文字、あいうえお、アルファベットは昇順。
+// 漢字は基準がわからない
+// sortは他にもキーと対になって移動するものがある。
+// phpでprint_r()すると配列も連想配列(キーのやつ)として表示される
