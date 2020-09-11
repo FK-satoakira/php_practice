@@ -1,0 +1,9 @@
+<?php
+$time = localtime(time(),true);
+print_r($time["tm_mon"]) ;
+echo "<br>";
+echo $time["tm_year"]+1900;
+echo "<br>";
+print_r($time);
+
+// echo $time;＝エラー＋Arrayが表示される
