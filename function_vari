@@ -1,0 +1,19 @@
+<?php
+
+$r=call(100);
+// $y=2020;
+echo $r;
+function call($x){
+    return $x * 100;
+}
+$test = 777;
+test();
+function test(){
+    global $test;
+    echo $test;
+}
+// スコープがjavaとは違うのかもしれない
+// スコープ外の$yは関数内で使用不可だった
+// グローバル変数使用の場合はglobal宣言が必要
+// 変数、関数呼び出しの順でないと出力されない。→test(),$testではなく$test,test()
+
