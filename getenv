@@ -1,0 +1,12 @@
+<?php
+$agent = getenv("HTTP_USER_AGENT");
+echo $agent; /* これでブラウザの情報を表示 */
+echo "<br>";
+if(strpos($agent,"iPhone")==true || strpos($agent,"Android")==true){
+echo "スマホ用のサイトです";
+}elseif(strpos($agent,"Chrome")){　/* Chromeの文字は厳密に大小識別する */
+    echo "Chromeサイトです";
+
+}else{
+echo "PC用のサイトです";
+}
